@@ -50,14 +50,14 @@ class Storeivr_Wc_Admin_Settings {
 
 	/**
 	 * This function introduces the theme options into the 'Appearance' menu and into a top-level
-	 * 'WPPB Demo' menu.
+	 * 'StoreIVR WC' menu.
 	 */
 	public function setup_plugin_options_menu() {
 
 		//Add the menu to the Plugins set of menu items
 		add_plugins_page(
-			'WPPB Demo Options', 					// The title to be displayed in the browser window for this page.
-			'WPPB Demo Options',					// The text to be displayed for this menu item
+			'StoreIVR Options', 					// The title to be displayed in the browser window for this page.
+			'StoreIVR Options',					// The text to be displayed for this menu item
 			'manage_options',					// Which type of users can see this menu item
 			'storeivr_wc_options',			// The unique ID - that is, the slug - for this menu item
 			array( $this, 'render_settings_page_content')				// The name of the function to call when rendering this menu's page
@@ -126,7 +126,7 @@ class Storeivr_Wc_Admin_Settings {
 		<!-- Create a header in the default WordPress 'wrap' container -->
 		<div class="wrap">
 
-			<h2><?php _e( 'WPPB Demo Options', 'storeivr-wc' ); ?></h2>
+			<h2><?php _e( 'StoreIVR WC Options', 'storeivr-wc' ); ?></h2>
 			<?php settings_errors(); ?>
 
 			<?php if( isset( $_GET[ 'tab' ] ) ) {
